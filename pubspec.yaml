@@ -1,0 +1,44 @@
+name: flutter_chat_gpt
+description: A new Flutter project.
+publish_to: 'none' 
+version: 1.0.0+1
+
+environment:
+  sdk: '>=2.18.2 <3.0.0'
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+  flutter_bloc: ^8.1.1
+  equatable: ^2.0.5
+  flutter_chatgpt_api: ^1.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/bot.png
+
+  fonts:
+    - family: Mulish
+      fonts:
+        - asset: assets/font/mulish-200.ttf
+          weight: 200
+        - asset: assets/font/mulish-300.ttf
+          weight: 300
+        - asset: assets/font/mulish-400.ttf
+          weight: 400
+        - asset: assets/font/mulish-500.ttf
+          weight: 500
+        - asset: assets/font/mulish-600.ttf
+          weight: 600
+        - asset: assets/font/mulish-700.ttf
+          weight: 700
+        - asset: assets/font/mulish-800.ttf
+          weight: 800
+        - asset: assets/font/mulish-900.ttf
+          weight: 900
