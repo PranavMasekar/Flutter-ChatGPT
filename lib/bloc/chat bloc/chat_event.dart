@@ -6,3 +6,11 @@ abstract class ChatEvent extends Equatable {
   @override
   List<Object> get props => [];
 }
+
+class SendMessageEvent extends ChatEvent {
+  final String question;
+
+  SendMessageEvent({required this.question});
+  @override
+  List<Object> get props => [question];
+}
