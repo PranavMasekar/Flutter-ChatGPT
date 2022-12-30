@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_chat_gpt/utils/colors.dart';
 import 'package:flutter_chat_gpt/views/chat.dart';
 
 void main() {
@@ -11,6 +12,13 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter ChatGPT',
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        primaryColor: AppColors.backgroundColor,
+        bottomSheetTheme: BottomSheetThemeData(
+          backgroundColor: AppColors.backgroundColor,
+        ),
+      ),
       home: ChatScreen(),
     );
   }
